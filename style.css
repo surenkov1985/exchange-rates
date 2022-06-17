@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+
+#cont {
+    display: inline-block;
+
+}
+
+.cont__item,
+.cont__item_head {
+    display: grid;
+    grid-template-columns: 150px 100px 100px;
+    padding: 3px 3px 3px 10px;
+    
+}
+.archive-valute-item {
+    display: grid;
+    grid-template-columns: 130px 100px 100px;
+    margin-left: 20px;
+}
+.cont__list {
+    padding: 0;
+}
+
+.cont__item {
+    background-color: #e9e9e9;
+    padding: 3px 3px 3px 10px;
+    position: relative;
+}
+.cont__item_head {
+    font-weight: 600;
+}
+.non {
+    display: none;
+}
+ .archive-valute-list {
+    padding: 0;
+}
+.archive-valute-item {
+    padding: 3px 3px 3px 10px;
+    background-color: rgb(184, 184, 184);
+    opacity: 0.8;
+}
+.valute-date {
+    opacity: 0.5;
+}
+.row1 {
+    position: relative;
+}
+.archive {
+    position: absolute;
+    background: #fff;
+    z-index: 10;
+}
+table {
+    margin-left: 50px;
+}
+.valute-charCode {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip {
+    max-width: 200px;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #d1d1d1;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 110%;
+    left: 15px;
+    border: 1px solid #3c3c3c;
+    background-color: #3c3c3c;
+    z-index: 10;
+    border-radius: 5px;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #3c3c3c transparent transparent transparent;
+}
+@keyframes showTooltip {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.charСode-value:hover {
+    font-weight: 900;
+    cursor: pointer;
+}
+.valute-diff-numb {
+    display: flex;
+    justify-content: flex-end;
+}
+.list-row span {
+    width: 150px;
+    text-align: left;
+}
+
+.negative {
+    color: red;
+}
+.positive {
+    color: green;
+}
