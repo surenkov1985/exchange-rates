@@ -1,4 +1,4 @@
-const HISTORY_COUNT = 4;
+const HISTORY_COUNT = 10;
 const MAIN_URL = 'https://www.cbr-xml-daily.ru/daily_json.js';
 const TOOLTIP_DELAY = 500;
 
